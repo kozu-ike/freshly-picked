@@ -33,7 +33,7 @@ php artisan migrate
 7. シーディングの実行
 ``` bash
 php artisan db:seed
-
+```
 
 ## 画像ファイルの取り扱い
 プロジェクトに画像ファイルが必要な場合は、リポジトリに含まれる `fruits-img.zip` を解凍し、`storage/app/public/products` フォルダに配置してください。
