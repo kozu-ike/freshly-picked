@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container_fruit_name {
+    color: #ffcc00;
+}
+
+.product-show {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-group_fruit_img {
+    text-align: center;
+}
+
+.form-group_fruit_img img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group_new_img {
+    margin-top: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info_change {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.season-checkboxes label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.save-btn {
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+}
+
+.delete-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.delete-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button .btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.back-button .btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.back-button a {
+    background-color: #d3d3d3;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #b0b0b0;
+    color: #fff;
+}
+.form-group_buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-group_buttons-left,
+.form-group_buttons-center,
+.form-group_buttons-right {
+    flex: 1;
+    text-align: center;
+}
+
+.back-button .btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.back-button .btn:hover {
+    background-color: #45a049;
+}
+
+.save-btn {
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    background-color: #e6b800;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.delete-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .form-group_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group_buttons-left,
+    .form-group_buttons-center,
+    .form-group_buttons-right {
+        flex: none;
+    }
+}
